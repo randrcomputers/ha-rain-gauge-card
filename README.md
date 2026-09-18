@@ -1,5 +1,9 @@
 # Rain Gauge Plus Card
 
+[![hacs_badge](https://img.shields.io/badge/HACS-Custom-41BDF5.svg)](https://github.com/hacs/integration)
+[![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=randrcomputers&repository=ha-rain-gauge-card&category=plugin)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 Lovelace card that looks like a real rain gauge, with **last 12 hours**, **last 24 hours**, today / yesterday, optional rain rate, and a daily history chart.
 
 Works with a daily or accumulating precipitation sensor. History comes from the Home Assistant recorder (hourly / daily statistics).
@@ -37,17 +41,27 @@ Pick a style in the visual editor (**Gauge look**) or with `look:` in YAML. Prod
 
 ## Install
 
-1. Copy `rain-gauge-plus-card.js` to `config/www/` **or** add this repo in HACS → **Frontend** → **Custom repositories**
-2. **Settings → Dashboards → Resources** → add `/local/rain-gauge-plus-card.js` (module)
-3. Reload resources and hard-refresh the browser (**Ctrl+F5**)
+### HACS (recommended)
 
-### HACS custom repository
+If HACS is already on your Home Assistant, click this button to open the repository and download it:
+
+[![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=randrcomputers&repository=ha-rain-gauge-card&category=plugin)
+
+Then **Download**, reload dashboard resources, and hard-refresh the browser (**Ctrl+F5**).
+
+Or add it by hand: **HACS → Frontend → ⋮ → Custom repositories** →
 
 ```
 https://github.com/randrcomputers/ha-rain-gauge-card
 ```
 
-Category: **Lovelace**
+Category: **Lovelace** / **Dashboard**
+
+### Manual
+
+1. Copy `rain-gauge-plus-card.js` to `config/www/`
+2. [![Open your Home Assistant instance and show your dashboard resources.](https://my.home-assistant.io/badges/lovelace_resources.svg)](https://my.home-assistant.io/redirect/lovelace_resources/) → add `/local/rain-gauge-plus-card.js` as a **JavaScript module**
+3. Hard-refresh the browser (**Ctrl+F5**)
 
 ## Quick start
 
